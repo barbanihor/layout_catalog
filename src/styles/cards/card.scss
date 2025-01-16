@@ -7,6 +7,7 @@
   border: 1px solid $color-grey;
   font-family: Roboto, sans-serif;
   flex-direction: column;
+  transition: 300ms;
 
   &__image {
     width: 160px;
@@ -14,7 +15,7 @@
     margin: 0 auto;
   }
 
-  &__name {
+  &__title {
     margin: 40px 0 0;
     font-weight: 500;
     font-size: 12px;
@@ -61,10 +62,18 @@
     font-size: 14px;
 
     &:hover {
-      background-color: $color-white;
+      background-color: #fff;
       color: $color-blue-accent;
       border: 1px solid $color-blue-accent;
     }
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:hover .card__title {
+    color: #34568b;
   }
 }
 

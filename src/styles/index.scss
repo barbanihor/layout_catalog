@@ -9,8 +9,6 @@ body {
 }
 
 .header {
-  margin-bottom: 50px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,7 +39,7 @@ body {
   padding: 22.5px 0;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000;
+  color: #060b35;
 }
 
 .nav__link:hover {
@@ -64,10 +62,10 @@ body {
   background-color: var(--main-color);
 }
 
-.main {
+.catalog {
   display: flex;
   justify-content: center;
-  padding-inline: 40px;
+  padding: 50px 40px;
 }
 
 .cards {
@@ -75,8 +73,25 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 200px);
   grid-template-rows: repeat(2, 408px);
-  justify-content: space-between;
-  column-gap: 46px;
+  gap: 46px 48px;
+}
+
+@media (min-width: 488px) {
+  .cards {
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(3, 200px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(4, 200px);
+  }
 }
 
 @import './cards/cards';
