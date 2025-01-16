@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --main-color: #00acdc;
 }
@@ -94,4 +98,6 @@ body {
   }
 }
 
-@import './cards/cards';
+@import './cards/variables';
+@import './cards/card';
+@import './cards/stars';
